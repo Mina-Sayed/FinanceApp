@@ -33,7 +33,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchSavingGoals = async () => {
       try {
-        const response = await axios.get('/api/saving-goals');
+        const response = await axios.get('http://localhost:8000/api/saving-goals');
         setSavingGoals(response.data);
       } catch (error) {
         console.error(error);

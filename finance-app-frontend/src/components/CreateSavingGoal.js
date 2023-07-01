@@ -45,7 +45,7 @@ const CreateSavingGoal = () => {
     };
 
     axios
-      .post('/api/saving-goals/', goalData)
+      .post('http://localhost:8000/api/saving-goals/', goalData)
       .then((response) => {
         console.log(response.data);
         // Reset form fields
